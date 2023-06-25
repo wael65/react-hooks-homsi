@@ -3,7 +3,7 @@
 
 import { useState } from "react"
 
-export default function State() {
+export default function State1() {
 
   const [value, setValue] = useState(0)
 

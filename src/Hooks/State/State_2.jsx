@@ -4,7 +4,7 @@
 import { useState } from "react"
 
 
-export default function State() {
+export default function State2() {
 
   const [posts, setPosts] = useState()
   const [postId, setPostId] = useState(1)

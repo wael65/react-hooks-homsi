@@ -1,5 +1,8 @@
 import './App.css'
-import State from './Hooks/State/State'
+import Effect1 from './Hooks/Effect/Effect1'
+import Effect2 from './Hooks/Effect/Effect2'
+import State1 from './Hooks/State/State_1.jsx'
+import State2 from './Hooks/State/State_2.jsx'
 
 function App() {
   
@@ -7,8 +10,13 @@ function App() {
   return (
     <>
       
-    <State /> 
-         
+    {/* <Effect1 />   */}
+    <Effect2 />  
+
+    {/* <State1 />   */}
+    {/* <State2 />   */}
+
+ 
     </>
   )
 }
