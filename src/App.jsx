@@ -1,5 +1,5 @@
-
 import './App.css'
+import State from './Hooks/State/State'
 
 function App() {
   
@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       
-      <h1 > React vite </h1>
+    <State /> 
+         
     </>
   )
 }
