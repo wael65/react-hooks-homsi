@@ -1,15 +1,24 @@
+import { useRef } from "react";
+
 export default function Ref1() {
+  const lastPara = useRef();
+
+  const moveDown = () => {
+    lastPara.current.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   return (
     <>
       <h2>Go To Paragraph</h2>
 
+      <button onClick={moveDown}>Down</button>
+
       <div>
         <section>
-          <img
-            src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
-            width="200"
-            height="200"
-          />
+          <img src="https://picsum.photos/200/200" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -18,11 +27,7 @@ export default function Ref1() {
         </section>
 
         <section>
-          <img
-            src="https://images.unsplash.com/photo-1496062031456-07b8f162a322?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"
-            width="200"
-            height="200"
-          />
+          <img src="https://picsum.photos/200/200?grayscale" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -31,11 +36,7 @@ export default function Ref1() {
         </section>
 
         <section>
-          <img
-            src="https://www.thespruce.com/thmb/tWd6xhd1BcllwqkZxd9RkmWqQkc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/types-of-roses-4069722-hero-17f5468ab53b4622b27e3d96534105db.jpg"
-            width="200"
-            height="200"
-          />
+          <img src="https://picsum.photos/seed/picsum/200/200" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -44,12 +45,8 @@ export default function Ref1() {
         </section>
 
         <section>
-          <img
-            src="https://www.thespruce.com/thmb/tWd6xhd1BcllwqkZxd9RkmWqQkc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/types-of-roses-4069722-hero-17f5468ab53b4622b27e3d96534105db.jpg"
-            width="200"
-            height="200"
-          />
-          <p>
+          <img src="https://picsum.photos/id/237/200/200" />
+          <p ref={lastPara}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
