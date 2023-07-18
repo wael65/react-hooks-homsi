@@ -1,4 +1,6 @@
 import "./App.css";
+import ComponentA from "./Hooks/Context/ComponentA";
+
 import Effect1 from "./Hooks/Effect/Effect1";
 import Effect2 from "./Hooks/Effect/Effect2";
 import Ref1 from "./Hooks/Ref/Ref1";
@@ -13,6 +15,8 @@ import State5 from "./Hooks/State/State5";
 function App() {
   return (
     <>
+      <ComponentA />
+
       {/* <Ref1 /> */}
       {/* <Ref2 /> */}
       {/* <Ref3 /> */}
@@ -24,7 +28,7 @@ function App() {
       {/* <State2 />   */}
       {/* <State3 /> */}
       {/* <State4 /> */}
-      <State5 />
+      {/* <State5 /> */}
     </>
   );
 }
