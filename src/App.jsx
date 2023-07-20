@@ -11,11 +11,18 @@ import State1 from "./Hooks/State/State1.jsx";
 import State2 from "./Hooks/State/State2.jsx";
 import State4 from "./Hooks/State/State4";
 import State5 from "./Hooks/State/State5";
+import Reducer1 from "./Hooks/Reducer/Reducer1";
+import Reducer2 from "./Hooks/Reducer/Reducer2";
+import Reducer3 from "./Hooks/Reducer/Reducer3";
 
 function App() {
   return (
     <>
-      <ComponentA />
+      <Reducer3 />
+      {/* <Reducer2 /> */}
+      {/* <Reducer1 /> */}
+
+      {/* <ComponentA /> */}
 
       {/* <Ref1 /> */}
       {/* <Ref2 /> */}
