@@ -14,10 +14,12 @@ import State5 from "./Hooks/State/State5";
 import Reducer1 from "./Hooks/Reducer/Reducer1";
 import Reducer2 from "./Hooks/Reducer/Reducer2";
 import Reducer3 from "./Hooks/Reducer/Reducer3";
+import Reducer4 from "./Hooks/Reducer/Reducer4";
 
 function App() {
   return (
     <>
+      {/* <Reducer4 /> */}
       <Reducer3 />
       {/* <Reducer2 /> */}
       {/* <Reducer1 /> */}
