@@ -14,14 +14,11 @@ import State5 from "./Hooks/State/State5";
 import Reducer1 from "./Hooks/Reducer/Reducer1";
 import Reducer2 from "./Hooks/Reducer/Reducer2";
 import Reducer3 from "./Hooks/Reducer/Reducer3";
-import PokemonApp from "./Pokemon/PokemonApp";
 
 function App() {
   return (
     <>
-      <PokemonApp />
-
-      {/* <Reducer3 /> */}
+      <Reducer3 />
       {/* <Reducer2 /> */}
       {/* <Reducer1 /> */}
 
