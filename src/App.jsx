@@ -15,12 +15,15 @@ import Reducer1 from "./Hooks/Reducer/Reducer1";
 import Reducer2 from "./Hooks/Reducer/Reducer2";
 import Reducer3 from "./Hooks/Reducer/Reducer3";
 import PokemonApp from "./Pokemon/PokemonApp";
-import Cart from "./more/Cart";
+import Cart from "./playground/Cart";
+import Search from "./playground/search/Search";
 
 function App() {
   return (
     <>
-      <Cart />
+      <Search />
+
+      {/* <Cart /> */}
 
       {/* <Totals /> */}
 
